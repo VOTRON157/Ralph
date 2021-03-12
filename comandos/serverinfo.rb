@@ -1,4 +1,4 @@
-
+# svi
 $bot.command :serverinfo do |msg|
         guild = msg.server
         

@@ -1,3 +1,4 @@
+#avatar
 $bot.command :avatar, arg_types: [Discordrb::User] do |msg, user|
         id = msg.content.split(' ')[1]
         if !user 

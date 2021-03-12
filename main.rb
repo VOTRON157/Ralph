@@ -14,7 +14,7 @@ $bot.mention do |event|
                 embed.color = "WHITE"
         end
 end
-# EVENTO READY
+# EVENTO READY.
 $bot.ready do |event|
        $bot.game=('#help ou #ajuda')
         puts "BOT LIGADO 🏳️"

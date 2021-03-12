@@ -1,3 +1,4 @@
+#kick
 $bot.command(:kick, arg_types: [Discordrb::User], required_permissions: [:kick_members], permission_message: "Você precisa ter a permissão `Expulsar Membros` para usar esse comando.") do |msg, user, *reason| 
         id = msg.content.split(" ")[1]
         if !msg.server.member($bot.profile.id).permission?(:kick_members)

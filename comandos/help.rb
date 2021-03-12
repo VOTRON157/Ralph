@@ -1,3 +1,4 @@
+# help
 $bot.command(:help, aliases: [:ajuda]) do |msg|
         embed = Discordrb::Webhooks::Embed.new
         embed.thumbnail = { url: "https://emoji.discord.st/emojis/DiscordLuv.gif" }

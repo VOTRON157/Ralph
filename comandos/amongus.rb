@@ -1,3 +1,4 @@
+#amongus
 $bot.command :amongus do |msg, *sus|
         base_url = "https://vacefron.nl/api/ejected?name=#{sus.join('+')}&impostor=true&crewmate=red"
         if sus.length == 0

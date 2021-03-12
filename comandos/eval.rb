@@ -1,5 +1,6 @@
+
 $bot.command :eval do |msg, *code|
-        if msg.user.id != 712113218360967218
+        if msg.user.id != 712113218360967218 # meu id
                 return "Apenas meu criador pode utilizar esse comando."
         end 
         if code.length == 0

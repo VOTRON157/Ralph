@@ -1,4 +1,4 @@
-require 'usagewatch_ext'
+require 'usagewatch_ext' # gem
 
 usw = Usagewatch
 $bot.command :botinfo do |msg|
