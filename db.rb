@@ -16,4 +16,4 @@ end
         #puts doc["server_id"]
 #end
 #client[:users].insert_one doc #para inserur um documento
-#client[:users].delete_one({:server_id => 837292997}) # para deletar um documento
+#client[:users].delete_one({:server_id => 837292997}) # para deletar um documento.

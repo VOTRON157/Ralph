@@ -1,4 +1,4 @@
-# esse arquivo e pra por as variáveis globais (as que começam com $), pra ficar mais organizado
+# esse arquivo e pra por as variáveis globais (as que começam com $), pra ficar mais organizado.
 $meses = {
                 "01" => "Janeiro",
                 "02" => "Fevereiro",

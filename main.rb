@@ -45,7 +45,7 @@ def $bot.reply(message, options) # inline reply
         return
 end
 
-# require "./server.rb" # se vc usa repl.it ou glitch, isso e prá criar um servidor http para o bot não desligar 
+# require "./server.rb" # se vc usa repl.it ou glitch, isso e prá criar um servidor http para o bot não desligar.
 
 
 
