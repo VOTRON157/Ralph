@@ -27,7 +27,7 @@ Find.find('./comandos').collect do |e|
         end
 end 
 
-def $bot.reply(message, options)
+def $bot.reply(message, options) # inline reply
         body = {
                 "content" => options["content"] || nil,
                 "embed" => options["embed"] || nil,
@@ -45,7 +45,7 @@ def $bot.reply(message, options)
         return
 end
 
-# require "./server.rb"
+# require "./server.rb" # se vc usa repl.it ou glitch, isso e prá criar um servidor http para o bot não desligar 
 
 
 
