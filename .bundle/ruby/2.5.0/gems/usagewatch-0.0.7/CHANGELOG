@@ -1,0 +1,43 @@
+License: (MIT) Copyright (C) 2013 usagewatch Author Phil Chen, contributor Ruben Espinosa.
+
+0.0.7 July 25 2013
+====
+* Added referring people to usagewatch_ext for OS support other then Linux in the OS detection
+* Cleaned some syntax of calling methods
+
+0.0.6 July 23 2013
+====
+* Removed Mac OS methods which will become a different Gem
+* Call methods like a method class
+* Validation to work only in Linux OS
+* Added methods for top ten processes by CPU consumption
+* Added methods for top ten processes by Memory consumption
+
+0.0.6.beta3 July 22 2013
+====
+* Fixed a issue causing Disk I/O and Bandwidth methods to break
+
+0.0.6.beta2 July 22 2013
+====
+* Added methods for Mac OS
+* Call methods like a method class
+
+0.0.6.beta1 July 19 2013
+====
+* Added methods for top ten processes by CPU consumption
+* Added methods for top ten processes by Memory consumption
+* Validation to work only in Linux OS
+
+0.0.3, 0.0.4, 0.0.5 Jul 17 2013
+====
+* Gem specs actualization
+
+0.0.2 Jul 17 2013
+=====
+* Percentage of disk utilization
+* Load format to float
+
+0.0.1 Jul 17 2013
+=====
+* First release of the gem
+

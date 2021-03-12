@@ -1,0 +1,16 @@
+current directory: /home/runner/TESTE/.bundle/ruby/2.5.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+/usr/bin/ruby2.5 -r ./siteconf20210307-92-128c7za.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/runner/TESTE/.bundle/ruby/2.5.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /home/runner/TESTE/.bundle/ruby/2.5.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /home/runner/TESTE/.bundle/ruby/2.5.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20210307-92-14alwol
