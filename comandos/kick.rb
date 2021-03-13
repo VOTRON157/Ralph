@@ -1,5 +1,5 @@
 #kick
-$bot.command(:kick, arg_types: [Discordrb::User], required_permissions: [:kick_members], permission_message: "Você precisa ter a permissão `Expulsar Membros` para usar esse comando.") do |msg, user, *reason| 
+$bot.command(:kick, arg_types: [Discordrb::User], required_permissions: [:kick_members], permission_message: "Você precisa ter a permissão `Expulsar Membros` para usar esse comando.", bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.') do |msg, user, *reason| 
         id = msg.content.split(" ")[1]
         if !msg.server.member($bot.profile.id).permission?(:kick_members)
                 return "Eu preciso ter a permissão `Expulsar Membros` para executar esse comando."

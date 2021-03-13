@@ -1,5 +1,5 @@
 # help
-$bot.command(:help, aliases: [:ajuda]) do |msg|
+$bot.command(:help, aliases: [:ajuda], bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.') do |msg|
         embed = Discordrb::Webhooks::Embed.new
         embed.thumbnail = { url: "https://emoji.discord.st/emojis/DiscordLuv.gif" }
         embed.description = "Olá #{msg.user.mention}, esse são todos os meus comandos!"

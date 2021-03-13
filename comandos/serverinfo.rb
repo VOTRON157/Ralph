@@ -1,5 +1,5 @@
 # svi
-$bot.command :serverinfo do |msg|
+$bot.command :serverinfo, bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.' do |msg|
         guild = msg.server
         
         canais_texto = guild.channels.select {|item| 0 == item.type}.size

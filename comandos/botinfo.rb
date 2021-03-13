@@ -1,7 +1,7 @@
 require 'usagewatch_ext' # gem
 
 usw = Usagewatch
-$bot.command :botinfo do |msg|
+$bot.command :botinfo, bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando'  do |msg|
         user = $bot.user(712113218360967218)
         embed = Discordrb::Webhooks::Embed.new
         embed.color = "WHITE"

@@ -6,7 +6,7 @@ load "./global_vars.rb"
 
 
 $bot = Discordrb::Commands::CommandBot.new token: ENV['TOKEN'], client_id: "818216244029030441", prefix: '#'
-
+$bot.bucket :command_delay, delay: 5
 
 $bot.mention do |event|
         event.channel.send_embed do |embed|

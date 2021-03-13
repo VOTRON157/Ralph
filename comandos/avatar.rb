@@ -1,5 +1,5 @@
 #avatar
-$bot.command :avatar, arg_types: [Discordrb::User] do |msg, user|
+$bot.command :avatar, arg_types: [Discordrb::User], bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando' do |msg, user|
         id = msg.content.split(' ')[1]
         if !user 
                user = $bot.user(id ? id : msg.user.id)

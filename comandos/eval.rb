@@ -1,5 +1,5 @@
 
-$bot.command :eval do |msg, *code|
+$bot.command :eval, bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.'  do |msg, *code|
         if msg.user.id != 712113218360967218 # meu id
                 return "Apenas meu criador pode utilizar esse comando."
         end 

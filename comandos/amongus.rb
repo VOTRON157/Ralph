@@ -1,5 +1,4 @@
-#amongus
-$bot.command :amongus do |msg, *sus|
+$bot.command :amongus, bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.' do |msg, *sus|
         base_url = "https://vacefron.nl/api/ejected?name=#{sus.join('+')}&impostor=true&crewmate=red"
         if sus.length == 0
                 return "Escreva o nome do impostor\n`Ex: #amongus Votron`"
