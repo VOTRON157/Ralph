@@ -13,7 +13,7 @@ $bot.command :amongus, bucket: :command_delay, rate_limit_message: 'Espere `%tim
           file.write(image.read)
         end 
       end
-        msg.channel.send_file(File.open('amongus.jpg', 'r'))
+        msg.channel.send_file(File.open('amongus.jpg', 'r'), spoiler: true, caption: "🤔 | Quem será o impostor?\n||Executado por: #{msg.author.mention} 🤐||")
         File.delete("./amongus.jpg")
         return
 end
