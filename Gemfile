@@ -19,3 +19,5 @@ gem "usagewatch", "~> 0.0.7"
 gem "usagewatch_ext", "~> 0.2.1"
 
 gem "httparty", "~> 0.18.1"
+
+gem "down", "~> 5.2"

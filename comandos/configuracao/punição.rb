@@ -1,4 +1,4 @@
-$bot.command :punição, aliases: [:punicao], bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.' do |msg, id|
+$bot.command :punição, aliases: [:punicao], bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.', required_permissions: [:administrator], permission_message: "Você precisa ter a permissão `Administrador` para usar esse comando." do |msg, id|
   if id == 'desligar'
     $mongo[:guilds].update_one({:server_id => msg.server.id}, '$set' => {:ch_punicao => nil})
     @embed = Discordrb::Webhooks::Embed.new 
@@ -11,7 +11,12 @@ $bot.command :punição, aliases: [:punicao], bucket: :command_delay, rate_limit
     return $bot.reply(msg.message, {"embed" => @embed.to_hash})
   end
   if !id 
-    return $bot.reply(msg.message, { "content" => "Uso correto: `#{$bot.prefix}punição <menção do canal/id>`\n Ou #{$bot.prefix}punição desligar `(para remover o canal atual)`"})
+    @embed = Discordrb::Webhooks::Embed.new 
+    @embed.color = "00FF00"
+    @embed.description = "> **Oque você quer alterar?**"
+    @embed.add_field(name: "Se quiser definir um canal", value: "Use `#punição <menção do canal/id>`")
+    @embed.add_field(name: "Se quiser remover o canal atual", value: "Use `#punição desligar`")
+    return $bot.reply(msg.message, { "embed" => @embed.to_hash})
   end
   if id.to_i == 0
     id = id[2..-2]

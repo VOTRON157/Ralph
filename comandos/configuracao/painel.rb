@@ -1,11 +1,6 @@
 $bot.command(:painel, bucket: :command_delay, rate_limit_message: 'Espere `%time%` segundos para usar outro comando.') do |msg|
   
   info = $mongo[:guilds].find(:server_id => msg.server.id).first 
-  if !info
-    @doc = { :_id => BSON::ObjectId.new, :server_id => msg.server.id }
-    $mongo[:guilds].insert_one @doc 
-    info = $mongo[:guilds].find(:server_id => msg.server.id).first 
-  end
 
   embed = Discordrb::Webhooks::Embed.new
   embed.color = "00FF00"

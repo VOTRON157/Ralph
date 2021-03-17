@@ -4,7 +4,7 @@ $bot.command :avatar, arg_types: [Discordrb::User], bucket: :command_delay, rate
                user = $bot.user(id ? id : msg.user.id)
        end 
        embed = Discordrb::Webhooks::Embed.new
-       embed.color = "WHITE"
+       embed.color = "00FF00"
        embed.timestamp = Time.now 
        embed.title = "<:logo:737804753995694190>・Avatar de #{user.name}##{user.tag}"
        embed.image = { url: "#{user.avatar_url}?size=1024" }

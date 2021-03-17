@@ -12,7 +12,7 @@ $bot.command :eval, bucket: :command_delay, rate_limit_message: 'Espere `%time%`
                  result = "token? aqui n"
         end
                 msg.channel.send_embed do |embed|
-                        embed.color = "WHITE"
+                        embed.color = "00FF00"
                         embed.add_field(name: "**Resultado:**", value: "```rb\n#{result}\n```" )
                 end
         rescue => e

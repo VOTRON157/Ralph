@@ -60,6 +60,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     bson (4.12.0)
     builder (3.2.4)
     concurrent-ruby (1.1.8)
@@ -74,6 +76,8 @@ GEM
       rest-client (>= 2.1.0.rc1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    down (5.2.0)
+      addressable (~> 2.5)
     erubi (1.10.0)
     event_emitter (0.2.6)
     ffi (1.15.0)
@@ -111,6 +115,7 @@ GEM
     opus-ruby (1.0.1)
       ffi
     png_canvas (0.0.1)
+    public_suffix (4.0.6)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -177,6 +182,7 @@ PLATFORMS
 
 DEPENDENCIES
   discordrb (~> 3.4)
+  down (~> 5.2)
   httparty (~> 0.18.1)
   mongo (~> 2.14)
   png_canvas (~> 0.0.1)

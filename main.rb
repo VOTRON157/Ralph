@@ -4,7 +4,6 @@ require "httparty"
 require "./db.rb"
 load "./global_vars.rb"
 
-
 $bot = Discordrb::Commands::CommandBot.new token: ENV['TOKEN'], client_id: "818216244029030441", prefix: '#'
 $bot.bucket :command_delay, delay: 5
 # ISSO E PARA CARREGAR AS PASTAS DOS COMANDOS!
@@ -37,11 +36,10 @@ def $bot.reply(message, options) # inline reply
                 "Authorization" => "Bot #{ENV['TOKEN']}"
         }
         response = HTTParty.post("https://discord.com/api/v8/channels/#{message.channel.id}/messages", :headers => headers, :body => body.to_json)
-        return
+        return 
 end
 
 # require "./server.rb" # se vc usa repl.it ou glitch, isso e prá criar um servidor http para o bot não desligar.
-
 
 
 $bot.run
